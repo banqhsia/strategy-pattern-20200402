@@ -6,6 +6,8 @@ use App\Freight;
 
 class VendorFactory
 {
+    private const FARE_NAMESPACE = __NAMESPACE__;
+
     /**
      * 建立 Fare 運費物件
      *
@@ -36,6 +38,6 @@ class VendorFactory
         $vendor = ucfirst($freight->getVendor());
         $reigon = ucfirst($freight->getReigon());
 
-        return "{$vendor}{$reigon}Fare";
+        return self::FARE_NAMESPACE . "\\{$vendor}{$reigon}Fare";
     }
 }
