@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Vendors;
+
+use App\Freight;
+
 class VendorFactory
 {
     /**

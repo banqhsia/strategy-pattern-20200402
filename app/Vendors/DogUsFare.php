@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Vendors;
+
 class DogUsFare extends Fare
 {
     /**
